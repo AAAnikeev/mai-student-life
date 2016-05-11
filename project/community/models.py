@@ -14,3 +14,5 @@ class Community(models.Model):
     contacts = models.TextField(max_length=300, default="")
     community_type = models.CharField(max_length=3, default='reg', choices=COMMUNITY_TYPES)
     logo = models.FileField(upload_to='community/logo', null=True, blank=True)
+
+		
